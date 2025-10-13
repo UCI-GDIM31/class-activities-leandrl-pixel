@@ -113,6 +113,9 @@ public class Ball : MonoBehaviour
         // STEP 9 -------------------------------------------------------------
         // Uncomment the below line to make the 'brightness' text change in your game.
         _brightnessText.text = "brightness = " + brightness;
+
+
+
         // STEP 9 -------------------------------------------------------------
     }
 }
