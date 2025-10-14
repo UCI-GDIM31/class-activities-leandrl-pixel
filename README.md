@@ -26,3 +26,5 @@ When creating components the actual headphones form that class  and now we have 
 Each pair has its own member variables which is the current battery to connection. 
 
 The methods can perform the play pause charge.
+
+3rd response:  The balls get extrmeemly bright because of how in unity your able to change the color constrast. but also within the code your able to tweak the settings a bit. by setting how much of a vlaue you want. For example each specfic color you want 
