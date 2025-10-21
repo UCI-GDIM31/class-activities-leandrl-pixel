@@ -54,7 +54,18 @@ public class BallW3 : MonoBehaviour
     //private ??? GetColorMultiplier(??? ???, ??? ???)
     //{
         // write the method body here!
-        
+       private float GetColorMultiplier(float speedX, float speedY)
+       {
+           float averageSpeed = (speedX + speedY) / 2.0f;
+           if (averageSpeed > _speedThreshold)
+           {
+               return 1.5f;
+           }
+           else
+           {
+               return 1.0f;
+           }
+    }
     //}
 
     // STEP 8 ------------------------------------------------------------------

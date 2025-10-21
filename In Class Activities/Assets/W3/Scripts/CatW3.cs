@@ -169,6 +169,7 @@ public class CatW3 : MonoBehaviour
         {
             return "ouch";
         }
+    }
     //
 
         // STEP 4 -----------------------------------------------------------------
@@ -180,13 +181,11 @@ public class CatW3 : MonoBehaviour
         // Set the value of the _spriteRenderer's color variable to the value
         //      of the ball's ballRenderer's color variable.
         // This means you'll need to use the '.' twice to get to the color :)
-        private void ChangeColor(BallW3 ball)
-        {
-            _spriteRenderer.color = ball.ballRenderer.color;
+        _spriteRenderer.color = ball.ballRenderer.color;
     }
 
     // STEP 7 -------------------------------------------------------------
-}
+
     
     // ------------------------------------------------------------------------
     private void DestroyCat()
