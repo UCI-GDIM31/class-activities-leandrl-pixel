@@ -39,3 +39,13 @@ This line calls the method GetKeyDown() with the parameter KeyCode.Space to see 
 
 line 32:_isGrounded = false;
     This line changes the _isGrounded member variable to false
+    Response 2 section : 
+The solution I came up with for the collider activity was to make the SoccerBall detect when it went into the goal. I added a Ridgidbody 2D to the soccerBall so Unity could sense the collision and and I check the trigger part on the goal object. That way the ball can go through the goal without bouncing off although it would still count as scoring when it touched. 
+Next part:
+the solution I had to do to fix any of the mistakes was making sure the vfx was working with the code and I was getting the points in
+
+    
+
+   
+
+
