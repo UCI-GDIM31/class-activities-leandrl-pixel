@@ -28,3 +28,14 @@ Each pair has its own member variables which is the current battery to connectio
 The methods can perform the play pause charge.
 
 3rd response:  The balls get extrmeemly bright because of how in unity your able to change the color constrast. but also within the code your able to tweak the settings a bit. by setting how much of a vlaue you want. For example each specfic color you want 
+
+
+### W4 
+Table 17 
+Line 17 is defining the bool vairable and _isGrounded  with the value of true 
+
+Line 28: if (Input.GetKeyDown(KeyCode.Space) && _isGrounded) 
+This line calls the method GetKeyDown() with the parameter KeyCode.Space to see if the space key was clicked and it checks if the isGrounded member variable is true. This is an if statement and has an else if as well in case 
+
+line 32:_isGrounded = false;
+    This line changes the _isGrounded member variable to false
