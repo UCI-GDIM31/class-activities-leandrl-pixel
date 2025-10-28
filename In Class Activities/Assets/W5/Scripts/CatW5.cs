@@ -49,7 +49,7 @@ public class CatW5 : MonoBehaviour
 
         Vector3 translation = Vector3.zero;
         transform.Translate (translation);
-
+        // (Leandro writing) - basic foward/ backward movement
         if (Input.GetKey(KeyCode.W)) 
         {
             translation = Vector3.forward;
@@ -58,12 +58,20 @@ public class CatW5 : MonoBehaviour
             translation = Vector3.back;
 
             }
-           
+        // (Leandro Writing) step 2 of flipping controls if enabled
+        if (_flipWSControls)
+        {
+            translation *= -1;
+        }
+           // (Leandro Writing) - apply movement
         transform.Translate (translation * _moveSpeed *  Time.deltaTime);  
        
+       
+        
         
 
         // STEP 1 & 2 ---------------------------------------------------------
+        // (Leandro writing) this part is where the turning is happening 
 
         float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
         transform.Rotate(0, rotation, 0);
