@@ -1,4 +1,6 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CatW5 : MonoBehaviour
 {
@@ -24,6 +26,7 @@ public class CatW5 : MonoBehaviour
         // to change the value of the translation variable,
         // and then call Translate on this GameObject's transform to make it move
         // using translation, _moveSpeed, and Time.deltaTime.
+        
         //
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
@@ -31,6 +34,7 @@ public class CatW5 : MonoBehaviour
         //          changing that axis?
         //      Should I modify translation with Vector addition, or multiplication,
         //          or both?
+        
         //
         // STEP 2
         // After Step 1 is working, add more code to make it possible to flip
@@ -44,8 +48,20 @@ public class CatW5 : MonoBehaviour
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
         Vector3 translation = Vector3.zero;
-        
+        transform.Translate (translation);
 
+        if (Input.GetKey(KeyCode.W)) 
+        {
+            translation = Vector3.forward;
+        } 
+        else if (Input.GetKey(KeyCode.S)) {
+            translation = Vector3.back;
+
+            }
+           
+        transform.Translate (translation * _moveSpeed *  Time.deltaTime);  
+       
+        
 
         // STEP 1 & 2 ---------------------------------------------------------
 

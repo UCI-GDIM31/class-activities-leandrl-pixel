@@ -45,8 +45,16 @@ Next part:
 the solution I had to do to fix any of the mistakes was making sure the vfx was working with the code and I was getting the points in
 
 ### W5 
-The  answer that I found intresting was the question if the vector was considered overkill? The response was never, no. The long answer is that as long as the game has to do with positioning 
+Response 1: The  answer that I found intresting was the question if the vector was considered overkill? The response was never, no. The long answer is that as long as the game has to do with positioning 
 then the game itself will need vectors, unless for whatever reason it does not need postioning, which is highly unlikely. 
+Response 2: 
+This class needs two member variables one being the type transform and the other being the type Navmesh 
+Response 3: 
+It needs two methods the start() method and update() method 
+Response 4: 
+It needs two methods the start()  method to where you store the NavMesh component of the gameObject to the navMesh variable by using GetComponent<>. The other method being Update() should access the SetDestination method from the navmesh variable and use the targets transform position as the parameter, so that the gamer object will actually go towards the target. 
+
+
 
     
 
