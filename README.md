@@ -44,6 +44,10 @@ The solution I came up with for the collider activity was to make the SoccerBall
 Next part:
 the solution I had to do to fix any of the mistakes was making sure the vfx was working with the code and I was getting the points in
 
+### W5 
+The  answer that I found intresting was the question if the vector was considered overkill? The response was never, no. The long answer is that as long as the game has to do with positioning 
+then the game itself will need vectors, unless for whatever reason it does not need postioning, which is highly unlikely. 
+
     
 
    
