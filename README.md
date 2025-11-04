@@ -53,11 +53,11 @@ Response 3:
 It needs two methods the start() method and update() method 
 Response 4: 
 It needs two methods the start()  method to where you store the NavMesh component of the gameObject to the navMesh variable by using GetComponent<>. The other method being Update() should access the SetDestination method from the navmesh variable and use the targets transform position as the parameter, so that the gamer object will actually go towards the target. 
-
-
-
-    
-
+### W6 
+Response 1: my category assingment was the other tools section and my link is this  ([https://docs.google.com/document/d/1v9abHr0z2I_ynx3ik8Slda9mncvm8eCeKY5KIBUfL-c/edit?usp=sharing])
+Response 2:
    
-
-
+   The BatW6 class needs a float variable for how fast the bat moves and a Transform variable for the player. 
+   It could also have a bool variable to check if the bat is chasing or not.
+   The class should have two methods: EnableChase(Transform player) to start chasing and StopChase() to stop I think it could have different names in variation but all serve the same purpose. 
+   The movement itself happens in Unity’s Update() method which makes the bat move toward the player each frame using Vector3.MoveTowards with Time.deltaTime for smooth motion.
