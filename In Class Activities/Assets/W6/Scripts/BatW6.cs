@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-// make students write entire class >:3
+
 public class BatW6 : MonoBehaviour
 {
     [SerializeField] private float _speed;

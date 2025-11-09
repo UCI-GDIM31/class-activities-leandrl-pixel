@@ -56,7 +56,7 @@ It needs two methods the start()  method to where you store the NavMesh componen
 ### W6 
 Response 1: my category assingment was the other tools section and my link is this  ([https://docs.google.com/document/d/1v9abHr0z2I_ynx3ik8Slda9mncvm8eCeKY5KIBUfL-c/edit?usp=sharing])
 Response 2:
-   
+ 
    The BatW6 class needs a float variable for how fast the bat moves and a Transform variable for the player. 
    It could also have a bool variable to check if the bat is chasing or not.
    The class should have two methods: EnableChase(Transform player) to start chasing and StopChase() to stop I think it could have different names in variation but all serve the same purpose. 
