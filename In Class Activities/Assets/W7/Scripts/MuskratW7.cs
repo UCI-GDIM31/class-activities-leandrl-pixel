@@ -46,18 +46,17 @@ public class MuskratW7 : MonoBehaviour
         // You might want to look below Step 3 for an example :D
         
         float leftright = Input.GetAxis("Horizontal");
-        
+        float forward = Input.GetAxis("Vertical");
 
 
         // STEP 3 -------------------------------------------------------------
 
-        float forward = Input.GetAxis("Vertical");
         Vector3 axis = transform.TransformDirection(Vector3.right);
         transform.RotateAround(
             _sphereTransform.position,
             axis,
             forward * _rotationSpeed * Time.deltaTime
-        );
+            );
 
 
         // STEP 5 -------------------------------------------------------------
@@ -66,6 +65,8 @@ public class MuskratW7 : MonoBehaviour
         // The Muskrat should never play the "flying" animation while on a
         //      bubble.
 
+        _animator.SetBool("flying", false);
+        _animator.SetBool("running", Mathf.Abs(forward) > 0.1f);
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -101,9 +102,9 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.Translate(movement * Vector3.forward  * _moveSpeed * Time.deltaTime);
-        
-        // transform.position += movement * Vector3.forward  * _moveSpeed * Time.deltaTime;
+        transform.Translate(Vector3.forward * movement * _moveSpeed * Time.deltaTime);
+
+
         // STEP 2 -------------------------------------------------------------
 
 
@@ -113,7 +114,8 @@ public class MuskratW7 : MonoBehaviour
         // Use _rigidbody.linearVelocity.
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
-
+        _animator.SetBool("flying", false);
+        _animator.SetBool("running", Mathf.Abs(movement) > 0.1f);
 
         // STEP 4 -------------------------------------------------------------
     }
