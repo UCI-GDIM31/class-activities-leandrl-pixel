@@ -84,8 +84,13 @@ public class MuskratW7 : MonoBehaviour
         // Hint: you'll need to multiply leftright by one of the static Vector3 values:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html
         //      like up, left, right, or forward.
+      
+
+        
+
 
         float leftright = Input.GetAxis("Horizontal");
+        transform.Rotate(Vector3.up * leftright * _rotationSpeed * Time.deltaTime);
 
         // STEP 1 -------------------------------------------------------------
 
@@ -96,8 +101,9 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
-
+        transform.Translate(movement * Vector3.forward  * _moveSpeed * Time.deltaTime);
+        
+        // transform.position += movement * Vector3.forward  * _moveSpeed * Time.deltaTime;
         // STEP 2 -------------------------------------------------------------
 
 
@@ -108,7 +114,7 @@ public class MuskratW7 : MonoBehaviour
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
-        
+
         // STEP 4 -------------------------------------------------------------
     }
 

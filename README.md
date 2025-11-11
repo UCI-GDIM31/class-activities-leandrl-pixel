@@ -61,3 +61,8 @@ Response 2:
    It could also have a bool variable to check if the bat is chasing or not.
    The class should have two methods: EnableChase(Transform player) to start chasing and StopChase() to stop I think it could have different names in variation but all serve the same purpose. 
    The movement itself happens in Unity’s Update() method which makes the bat move toward the player each frame using Vector3.MoveTowards with Time.deltaTime for smooth motion.
+
+   ### W7: 
+   Response 1: My role was ui and the link to the google doc is https://docs.google.com/document/d/1FI6_2kwBTTaRBxAmNkWfBAGIedIvuOI0K7P5KUZhsA8/edit?tab=t.0  
+   Response 2: Generally what was wrong with the transform.posisiton is its for direct positioning which doesn't work with what we want with movement. That's where transform.translate as it helps for moving in the local space of the scene. It works on object space and will actually apply with whatever movement you wanna apply relative to the space. WHile the transform position part does not care 
+
